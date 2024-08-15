@@ -1,0 +1,161 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+.header {
+    background-color: #004080;
+    padding: 15px 0;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.header ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.header ul li {
+    display: inline;
+    margin-right: 15px;
+}
+
+.header ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+h1 {
+    text-align: center;
+    color: #004080;
+    margin-top: 20px;
+    font-size: 36px;
+}
+
+h3 {
+    text-align: center;
+    color: #0066cc;
+    font-size: 24px;
+}
+
+.founder,
+.contacts {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+    flex-wrap: wrap;
+}
+
+.founder {
+    flex-direction: column;
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.contacts {
+    flex-direction: row;
+    gap: 20px;
+}
+
+.ceo {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.ceo img,
+.founder img {
+    border-radius: 50%;
+    margin-bottom: 15px;
+}
+
+.ceo h3,
+.founder h3 {
+    margin: 0;
+    font-size: 20px;
+    color: #004080;
+}
+
+.ceo p,
+.founder p {
+    font-size: 16px;
+    color: #555;
+    line-height: 1.6;
+    margin: 10px 0;
+}
+
+.ceo p br,
+.founder p br {
+    margin-bottom: 5px;
+}
+
+@media (max-width: 768px) {
+    .contacts {
+        flex-direction: column;
+    }
+}
+
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 20px 0;
+  text-align: center;
+  border-top: 4px solid #555;
+}
+
+.footer-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.message-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.message-form label {
+  font-size: 1.2em;
+  margin-bottom: 10px;
+}
+
+#message-input {
+  width: 100%;
+  max-width: 600px;
+  height: 100px;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  margin-bottom: 15px;
+  font-size: 1em;
+  resize: vertical;
+}
+
+.message-form button {
+  padding: 10px 20px;
+  border-radius: 5px;
+  border: none;
+  background-color: #f8b400;
+  color: #333;
+  font-size: 1.1em;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.message-form button:hover {
+  background-color: #f1a700;
+}
